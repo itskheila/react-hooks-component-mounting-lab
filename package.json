@@ -35,13 +35,22 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",
     "@babel/preset-react": "^7.22.15",
+    "@testing-library/jest-dom": "^6.6.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^27.5.1",
+    "jsdom": "^26.1.0",
     "sinon": "^6.3.3"
   }
 }
